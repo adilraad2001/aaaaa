@@ -23,7 +23,11 @@ GRANT ALL PRIVILEGES ON `base`.* TO 'base_user'@'localhost' IDENTIFIED BY 'base_
 
 ```js
 
-GRANT ALL PRIVILEGES ON `base`.* TO 'base_user'@'localhost' IDENTIFIED BY 'base_password';
+CREATE DATABASE base;
+CREATE USER 'base_user'@'localhost' IDENTIFIED BY 'base_password';
+GRANT ALL PRIVILEGES ON base.* TO 'base_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 
 ```
 
