@@ -29,6 +29,19 @@ GRANT ALL PRIVILEGES ON base.* TO 'base_user'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 
+
+<?php
+$DBlib_path = '/var/www/html/base/lib';
+$DBtype     = 'mysqli';
+$DBencoding = '';
+$base_url   = '/base';
+$DBserver   = 'localhost';
+$DBname     = 'base';
+$DBuser     = 'base_user';
+$DBpassword = 'base_password';
+$alert_dbname = 'snort';
+?>
+
 ```
 
 
