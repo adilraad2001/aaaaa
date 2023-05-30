@@ -17,7 +17,16 @@ sudo systemctl restart apache2
 
 CREATE DATABASE base;
 GRANT ALL PRIVILEGES ON base.* TO 'base_user'@'localhost' IDENTIFIED BY 'base_password';
+
 GRANT ALL PRIVILEGES ON `base`.* TO 'base_user'@'localhost' IDENTIFIED BY 'base_password';
+
+
+```js
+
+GRANT ALL PRIVILEGES ON `base`.* TO 'base_user'@'localhost' IDENTIFIED BY 'base_password';
+
+```
+
 
 FLUSH PRIVILEGES;
 EXIT;
